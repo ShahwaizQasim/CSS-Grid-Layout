@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #ccc;
+}
+.container{
+    height: 80vh;
+    width: 70%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 160px;
+    gap: 20px;
+}
+.box{
+    border: 2px solid #ccc;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+    font-size: 22px;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    transition: 1s;
+}
+.row-2{
+    grid-row: span 2;
+}
+.col-2{
+    grid-column: span 2;
+}
+.box:hover{
+    background-position: center;
+    background-color: #999;
+
+}
